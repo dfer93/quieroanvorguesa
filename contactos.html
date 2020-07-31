@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contactos | Quiero Anvorguesa</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="http://bk-latam-prod.s3.amazonaws.com/sites/burgerking.com.py/files/WHOPPER-DOBLE-500X540-PARRILLA.png" />
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN Y PRESENTACIÓN PRINCIPAL -->
+    <header>     
+        <nav id="menu" class="navbar navbar-color-on-scroll fixed-top navbar-expand-md" color-on-scroll="100">
+            <div class="container">
+                <div class="navbar-translate">
+                    <img src="assets/img/logo-negro_Mesa de trabajo 1.png" alt="" id="image-logo" style="width: 25%">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon">i</span>
+                    <span class="navbar-toggler-icon">i</span>
+                    <span class="navbar-toggler-icon">i</span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactos.html" class="nav-link">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+    </header>
+
+
+    <main class="container">
+        <div class="main main-raised">
+            <div class="container">
+                <div class="section text-center">
+<br><br><br><br>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-icon card-header-info">
+                <div class="card-icon"><i class="material-icons text-white">language</i> <h4 class="card-title">CONTACTOS</h4></div>
+                
+            </div>
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nombre"><b>Nombres y Apellidos</b></label>
+                        <input type="text" class="form-control" id="nombre" required="required">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="mail"><b>Correo</b></label>
+                        <input type="email" class="form-control" id="mail">
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="sexo"><b>Sexo</b></label>
+                        <select class="form-control selectpicker" data-style="btn btn-link" id="sexo" required="required">
+                            <option>Elige una opcion</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2"></div>
+                    <div class="form-check form-check-radio form-check-inline">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="tipoatencion" id="atc" value="option1" > Atención al Cliente
+                        <span class="circle"><span class="check"></span></span>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-radio form-check-inline">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="tipoatencion" id="pedidos" value="option2"> Pedidos
+                        <span class="circle"><span class="check"></span></span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <textarea class="col-md-12 form-control" placeholder="Mensaje" rows="3" required="required"></textarea>
+                </div>
+                <div class="row">
+                    
+                <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Desea recibir nuestros boletines
+                        <span class="form-check-sign">
+                        <span class="check"></span>
+                        </span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-success btn-block" id="enviar">ENVIAR</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div></div></div></main>
+
+    <footer class="footer footer-default">
+        <div class="container">
+            <nav>
+                <b>Mariscal Lopez casi Calle Cita. Pedidos al 021 675 000</b>
+            </nav>
+            <nav class="float-left">
+                <ul>
+                    <li>
+                        <a href="#!">
+                            Quiero Anvorguesa
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright float-right">
+                &copy;2020, made with <i class="material-icons">favorite</i> by
+                <a href="#" target="blank">Dani Fernández</a> for a better web.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="assets/js/core/sweet.js"></script>
+    <script>
+        $('#enviar').on('click', ()=>{
+            Swal.fire({
+              title: 'Estas seguro/a?',
+              icon: 'warning',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Sí, estoy seguro/a!'
+            }).then((result) => {
+              if (result.value) {
+                Swal.fire(
+                  'Enviado!',
+                  'En breve nos contactaremos contigo.',
+                  'success'
+                ).then(()=>{
+                    location.href='contactos.html'
+                })
+              }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+i{
+	color: #68301b;
+}
+/*
+#pedir-ahora{
+	background: #68301b
+}
+*/
+
+@media (max-width: 767px) {
+  .para-ocultar{
+    display: none
+  }
+}
+.unificar-tamanho{
+	width: 100%;
+	height: 150px
+}
+
+#cancelar-test{
+	display: none
+}

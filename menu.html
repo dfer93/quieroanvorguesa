@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Menú | Quiero Anvorguesa</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="http://bk-latam-prod.s3.amazonaws.com/sites/burgerking.com.py/files/WHOPPER-DOBLE-500X540-PARRILLA.png" />
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN Y PRESENTACIÓN PRINCIPAL -->
+    <header>     
+        <nav id="menu" class="navbar navbar-color-on-scroll fixed-top navbar-expand-md" color-on-scroll="100">
+            <div class="container">
+                <div class="navbar-translate">
+                    <img src="assets/img/logo-negro_Mesa de trabajo 1.png" alt="" id="image-logo" style="width: 25%">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactos.html" class="nav-link">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+    </header>
+
+<br><br><br>
+
+    <!-- AREA DE INFORMACIÓN DEL LOCAL -->
+    <main class="">
+        <div class="main main-raised">
+            <div class="container">
+                <div class="section text-center">
+
+                    <div class="row container">
+    
+                        <div class="col-md-1 para-ocultar"></div>
+
+        <!-- HAMBURGUESA -->
+
+                        <div class="card col-sm-6 col-md-3">
+                            <img class="card-img-top img-fluid unificar-tamanho" src="assets/img/menu/hamburguesa1.gif" rel="nofollow" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">ANVORGUESA A LA PARRILLA</h4>
+                                <p class="card-text">Especialidad, Jugosa carne de 250gr., acomapaño de nuestra salsa de la casa, tomate, lechuga, queso cheddar y bacon.</p>
+                                    <a href="javascript:;" class="btn btn-success" id="anvorguesa">Pedir</a>
+                                    <input class="form-control" type="number" placeholder="Cantidad" style="display: none" id="cantidad-anvorguesa">
+                                    <button href="javascript:;" class="btn btn-success" style="display: none" id="confirmar-anvorguesa">
+                                        <span class="material-icons">done</span>
+                                    </button>
+                                    <button class="btn btn-danger" style="display: none" id="cancelar-anvorguesa">
+                                        <span class="material-icons">clear</span>
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="col-md-1 para-ocultar"></div>
+
+        <!-- PAPAS CHEDAR -->
+                        <div class="card col-sm-6 col-md-3">
+                            <img class="card-img-top img-fluid unificar-tamanho" src="assets/img/menu/papas.gif" rel="nofollow" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">PAPAS CON SALSA CHEDDAR</h4>
+                                <p class="card-text">Receta de la casa, especialmente diseñada para que tu paladar pueda saborear el cielo.</p>
+                                    <a href="javascript:;" class="btn btn-success" id="papachedar">Pedir</a>
+                                    <input class="form-control" type="number" placeholder="Cantidad" style="display: none" id="cantidad-papachedar">
+                                    <button href="javascript:;" class="btn btn-success" style="display: none" id="confirmar-papachedar">
+                                        <span class="material-icons">done</span>
+                                    </button>
+                                    <button class="btn btn-danger" style="display: none" id="cancelar-papachedar">
+                                        <span class="material-icons">clear</span>
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="col-md-1 para-ocultar"></div>
+
+        <!-- PIZZA EXTRA QUESO -->
+                        <div class="card col-sm-12 col-md-3">
+                            <img class="card-img-top img-fluid unificar-tamanho" src="assets/img/menu/PIZZA.gif" rel="nofollow" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">PIZZA EXTRA QUESO</h4>
+                                <p class="card-text">Una excelente combinación entre masa casera y salsa como te lo hace tu mamá, encontrala en estos sabores.</p>
+                                <div class="form-group">
+                                    <label for="elegi-pizza">Sabores</label>
+                                        <select class="form-control selectpicker" data-style="btn btn-link" id="elegi-pizza">
+                                            <option value="0">Elige una opción</option>
+                                            <option value="1">Mozzarela</option>
+                                            <option value="1">Pollo con Catupiry</option>
+                                            <option value="1">5 Quesos</option>
+                                            <option value="1">Peperoni</option>
+                                        </select>
+                                </div>
+                                    <a href="javascript:;" class="btn btn-success" id="pizzaextra">Pedir</a>
+                                    <input class="form-control" type="number" placeholder="Cantidad" style="display: none" id="cantidad-pizzaextra">
+                                    <button href="javascript:;" class="btn btn-success" style="display: none" id="confirmar-pizzaextra">
+                                        <span class="material-icons">done</span>
+                                    </button>
+                                    <button class="btn btn-danger" style="display: none" id="cancelar-pizzaextra">
+                                        <span class="material-icons">clear</span>
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-1 para-ocultar"></div>
+
+        <!-- COSTILLA -->
+                        <div class="card col-sm-6 col-md-3">
+                            <img class="card-img-top img-fluid unificar-tamanho" src="assets/img/menu/costilla.gif" rel="nofollow" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">COSTILLAS DE DIOS</h4>
+                                <p class="card-text">Cocinas costillas y no salen los huesos?? Bueno, a nosotros sí, pedí pues</p>
+                                    <a href="javascript:;" class="btn btn-success" id="costillita">Pedir</a>
+                                    <input class="form-control" type="number" placeholder="Cantidad" style="display: none" id="cantidad-costillita">
+                                    <button href="javascript:;" class="btn btn-success" style="display: none" id="confirmar-costillita">
+                                        <span class="material-icons">done</span>
+                                    </button>
+                                    <button class="btn btn-danger" style="display: none" id="cancelar-costillita">
+                                        <span class="material-icons">clear</span>
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="col-md-1 para-ocultar"></div>
+
+        <!-- CHORIZO -->
+                        <div class="card col-sm-6 col-md-3">
+                            <img class="card-img-top img-fluid unificar-tamanho" src="assets/img/menu/chorizo.gif" rel="nofollow" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Chorizo</h4>
+                                <p class="card-text">El mejor chorizo parrillero, cocinado especialmente hecho para vos</p>
+
+                                    <a class="btn btn-success text-white" id="choricito">Pedir</a>
+                                    <input class="form-control" type="number" placeholder="Cantidad" style="display: none" id="cantidad-choricito">
+                                    <button href="javascript:;" class="btn btn-success" style="display: none" id="confirmar-choricito">
+                                        <span class="material-icons">done</span>
+                                    </button>
+                                    <button class="btn btn-danger" style="display: none" id="cancelar-choricito">
+                                        <span class="material-icons">clear</span>
+                                    </button>
+
+                            </div>
+                        </div>
+
+        <!-- BEBIDAS -->
+                        <div class="col-md-1 para-ocultar"></div>
+                        <div class="card col-sm-12 col-md-3">
+                            <img class="card-img-top img-fluid unificar-tamanho" src="assets/img/menu/gaseosa.gif" rel="nofollow" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Bebidas</h4>
+                                <p class="card-text">Acompañas tus deliciosas comidas con unas deliciosas bebidas</p>
+                                <div class="form-group">
+                                    <label for="marcas-bebidas">Marcas</label>
+                                        <select class="form-control selectpicker" data-style="btn btn-link" id="marcas-bebidas">
+                                            <option>Elige una opción</option>
+                                            <option>Marca 1</option>
+                                            <option>Marca 2</option>
+                                            <option>Marca 3</option>
+                                            <option>Marca 4</option>
+                                        </select>
+                                </div>
+                                    <a href="javascript:;" class="btn btn-success" id="bebidaslacteas">Pedir</a>
+                                    <input class="form-control" type="number" placeholder="Cantidad" style="display: none" id="cantidad-bebidaslacteas">
+                                    <button href="javascript:;" class="btn btn-success" style="display: none" id="confirmar-bebidaslacteas">
+                                        <span class="material-icons">done</span>
+                                    </button>
+                                    <button class="btn btn-danger" style="display: none" id="cancelar-bebidaslacteas">
+                                        <span class="material-icons">clear</span>
+                                    </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="footer footer-default">
+        <div class="container">
+            <nav>
+                <b>Mariscal Lopez casi Calle Cita. Pedidos al 021 675 000</b>
+            </nav>
+            <nav class="float-left">
+                <ul>
+                    <li>
+                        <a href="#!">
+                            Quiero Anvorguesa
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright float-right">
+                &copy;2020, made with <i class="material-icons">favorite</i> by
+                <a href="#" target="blank">Dani Fernández</a> for a better web.
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="assets/js/core/jquery.min.js"></script>
+<script src="assets/js/core/sweet.js"></script>
+<script>
+    //MENU 1
+    $('#anvorguesa').on('click', ()=>{
+        $('#confirmar-anvorguesa, #cancelar-anvorguesa, #cantidad-anvorguesa').show();
+    });
+    $('#cancelar-anvorguesa').on('click', ()=>{
+        $('#confirmar-anvorguesa, #cancelar-anvorguesa, #cantidad-anvorguesa').hide();
+    })
+    $('#confirmar-anvorguesa').on('click', ()=>{
+         $('#confirmar-anvorguesa, #cancelar-anvorguesa, #cantidad-anvorguesa').hide();
+         Swal.fire(
+          'Gracias por su compra!',
+          'Su pedido le llegará en breve!',
+          'success'
+        )
+    })
+    //MENU 2
+    $('#papachedar').on('click', ()=>{
+        $('#confirmar-papachedar, #cancelar-papachedar, #cantidad-papachedar').show();
+    });
+    $('#cancelar-papachedar').on('click', ()=>{
+        $('#confirmar-papachedar, #cancelar-papachedar, #cantidad-papachedar').hide();
+    })
+    $('#confirmar-papachedar').on('click', ()=>{
+     $('#confirmar-papachedar, #cancelar-papachedar, #cantidad-papachedar').hide();
+     Swal.fire(
+      'Gracias por su compra!',
+      'Su pedido le llegará en breve!',
+      'success'
+    )
+    })
+    //MENU 3
+    $('#pizzaextra').on('click', ()=>{
+        $('#confirmar-pizzaextra, #cancelar-pizzaextra, #cantidad-pizzaextra').show();
+    });
+    $('#cancelar-pizzaextra').on('click', ()=>{
+        $('#confirmar-pizzaextra, #cancelar-pizzaextra, #cantidad-pizzaextra').hide();
+    })
+    $('#confirmar-pizzaextra').on('click', ()=>{
+     $('#confirmar-pizzaextra, #cancelar-pizzaextra, #cantidad-pizzaextra').hide();
+     Swal.fire(
+      'Gracias por su compra!',
+      'Su pedido le llegará en breve!',
+      'success'
+    )
+    })
+    //MENU 4
+    $('#costillita').on('click', ()=>{
+        $('#confirmar-costillita, #cancelar-costillita, #cantidad-costillita').show();
+    });
+    $('#cancelar-costillita').on('click', ()=>{
+        $('#confirmar-costillita, #cancelar-costillita, #cantidad-costillita').hide();
+    })
+    $('#confirmar-costillita').on('click', ()=>{
+     $('#confirmar-costillita, #cancelar-costillita, #cantidad-costillita').hide();
+     Swal.fire(
+      'Gracias por su compra!',
+      'Su pedido le llegará en breve!',
+      'success'
+    )
+    })
+    //MENU 5
+    $('#choricito').on('click', ()=>{
+        $('#confirmar-choricito, #cancelar-choricito, #cantidad-choricito').show();
+    });
+    $('#cancelar-choricito').on('click', ()=>{
+        $('#confirmar-choricito, #cancelar-choricito, #cantidad-choricito').hide();
+    })
+    $('#confirmar-choricito').on('click', ()=>{
+     $('#confirmar-choricito, #cancelar-choricito, #cantidad-choricito').hide();
+     Swal.fire(
+      'Gracias por su compra!',
+      'Su pedido le llegará en breve!',
+      'success'
+    )
+    })
+    //MENU 6
+    $('#bebidaslacteas').on('click', ()=>{
+        $('#confirmar-bebidaslacteas, #cancelar-bebidaslacteas, #cantidad-bebidaslacteas').show();
+    });
+    $('#cancelar-bebidaslacteas').on('click', ()=>{
+        $('#confirmar-bebidaslacteas, #cancelar-bebidaslacteas, #cantidad-bebidaslacteas').hide();
+    })
+    $('#confirmar-bebidaslacteas').on('click', ()=>{
+     $('#confirmar-bebidaslacteas, #cancelar-bebidaslacteas, #cantidad-bebidaslacteas').hide();
+     Swal.fire(
+      'Gracias por su compra!',
+      'Su pedido le llegará en breve!',
+      'success'
+    )
+    })
+
+</script>
+</body>
+</html>
